@@ -11,17 +11,18 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 20px; /* Adicionando padding ao body */
 }
 
 .carta-container {
     perspective: 1000px;
-    padding: 20px; /* Espaço para evitar que a carta fique muito próxima das bordas da tela */
+    width: 100%; /* Faz o contêiner ocupar toda a largura */
+    max-width: 400px; /* Limita a largura máxima do contêiner */
 }
 
 .carta {
     width: 100%; /* Largura responsiva */
-    max-width: 400px; /* Largura máxima para a carta */
-    height: 500px;
+    height: 500px; /* Altura fixa para a carta */
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.8s;
@@ -49,12 +50,11 @@ body {
 }
 
 .frente h1 {
-    font-size: 2rem; /* Reduzido para melhor responsividade */
+    font-size: 2rem; /* Tamanho ajustado para melhor legibilidade */
 }
 
 .frente p {
-    font-size: 0.9rem; /* Reduzido para melhor responsividade */
-    margin-top: 10px;
+    font-size: 0.9rem; /* Tamanho ajustado */
 }
 
 .mensagem {
@@ -65,13 +65,13 @@ body {
 }
 
 .mensagem h2 {
-    font-size: 1.8rem; /* Reduzido para melhor responsividade */
+    font-size: 1.8rem; /* Tamanho ajustado */
     color: #ff6b6b;
 }
 
 .texto {
-    font-size: 1rem; /* Reduzido para melhor responsividade */
-    line-height: 1.6;
+    font-size: 1rem; /* Tamanho ajustado */
+    line-height: 1.5; /* Ajustando o espaçamento */
     margin-top: 15px;
 }
 
@@ -79,13 +79,13 @@ body {
     margin-top: 20px;
     display: flex;
     justify-content: center; /* Centraliza as imagens */
-    gap: 10px; /* Espaçamento reduzido entre as imagens */
+    gap: 10px; /* Espaçamento entre as imagens */
     flex-wrap: wrap; /* Permite que as imagens se ajustem em várias linhas */
 }
 
 .foto {
-    width: 80px; /* Largura reduzida para melhor responsividade */
-    height: 80px; /* Altura reduzida para melhor responsividade */
+    width: 80px; /* Largura consistente para as fotos */
+    height: 80px; /* Altura consistente para as fotos */
     object-fit: cover;
     border-radius: 8px;
     border: 2px solid #ff6b6b;
@@ -93,7 +93,7 @@ body {
 
 .assinatura {
     margin-top: 20px;
-    font-size: 1rem; /* Reduzido para melhor responsividade */
+    font-size: 1rem; /* Tamanho ajustado */
     color: #ff6b6b;
 }
 
