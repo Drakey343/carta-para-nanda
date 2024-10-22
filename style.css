@@ -11,18 +11,15 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    padding: 20px; /* Adicionando padding ao body */
 }
 
 .carta-container {
     perspective: 1000px;
-    width: 100%; /* Faz o contêiner ocupar toda a largura */
-    max-width: 400px; /* Limita a largura máxima do contêiner */
 }
 
 .carta {
-    width: 100%; /* Largura responsiva */
-    min-height: 500px; /* Altura mínima para evitar que fique achatada */
+    width: 400px;
+    height: 500px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.8s;
@@ -50,11 +47,12 @@ body {
 }
 
 .frente h1 {
-    font-size: 2rem; /* Tamanho ajustado para melhor legibilidade */
+    font-size: 2.5rem;
 }
 
 .frente p {
-    font-size: 0.9rem; /* Tamanho ajustado */
+    font-size: 1rem;
+    margin-top: 10px;
 }
 
 .mensagem {
@@ -65,27 +63,25 @@ body {
 }
 
 .mensagem h2 {
-    font-size: 1.8rem; /* Tamanho ajustado */
+    font-size: 2rem;
     color: #ff6b6b;
 }
 
 .texto {
-    font-size: 1rem; /* Tamanho ajustado */
-    line-height: 1.5; /* Ajustando o espaçamento */
+    font-size: 1.1rem;
+    line-height: 1.6;
     margin-top: 15px;
 }
 
 .galeria {
     margin-top: 20px;
     display: flex;
-    justify-content: center; /* Centraliza as imagens */
-    gap: 10px; /* Espaçamento entre as imagens */
-    flex-wrap: wrap; /* Permite que as imagens se ajustem em várias linhas */
+    gap: 15px;
 }
 
 .foto {
-    width: 80px; /* Largura consistente para as fotos */
-    height: 80px; /* Altura consistente para as fotos */
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 8px;
     border: 2px solid #ff6b6b;
@@ -93,7 +89,7 @@ body {
 
 .assinatura {
     margin-top: 20px;
-    font-size: 1rem; /* Tamanho ajustado */
+    font-size: 1.1rem;
     color: #ff6b6b;
 }
 
