@@ -22,7 +22,7 @@ body {
 
 .carta {
     width: 100%; /* Largura responsiva */
-    height: 500px; /* Altura fixa para a carta */
+    min-height: 500px; /* Altura mínima para evitar que fique achatada */
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.8s;
