@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #fcefe3; /* Fundo suave bege */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.carta-container {
+    perspective: 1000px;
+}
+
+.carta {
+    width: 400px;
+    height: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    cursor: pointer;
+}
+
+.frente, .mensagem {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.frente {
+    background: #ff6b6b;
+    color: #fff;
+}
+
+.frente h1 {
+    font-size: 2.5rem;
+}
+
+.frente p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.mensagem {
+    background: #ffffff;
+    color: #333;
+    transform: rotateY(180deg);
+    padding: 30px;
+}
+
+.mensagem h2 {
+    font-size: 2rem;
+    color: #ff6b6b;
+}
+
+.texto {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+.galeria {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.foto {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ff6b6b;
+}
+
+.assinatura {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #ff6b6b;
+}
+
+.carta.aberta {
+    transform: rotateY(180deg);
+}
