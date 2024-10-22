@@ -18,8 +18,8 @@ body {
 }
 
 .carta {
-    width: 400px;
-    height: 500px;
+    width: 400px; /* Largura padrão do cartão */
+    height: 500px; /* Altura padrão do cartão */
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.8s;
@@ -95,4 +95,26 @@ body {
 
 .carta.aberta {
     transform: rotateY(180deg);
+}
+
+/* Media Query para telas menores */
+@media (max-width: 600px) {
+    .carta {
+        width: 90%; /* Aumenta a largura do cartão para 90% da tela */
+        height: auto; /* Define a altura automática para manter a proporção */
+        max-width: 400px; /* Limita a largura máxima para não ficar muito largo */
+    }
+
+    .frente h1, .mensagem h2 {
+        font-size: 2rem; /* Ajusta o tamanho da fonte para melhor legibilidade */
+    }
+
+    .frente p, .texto, .assinatura {
+        font-size: 1rem; /* Ajusta o tamanho da fonte para melhor legibilidade */
+    }
+
+    .foto {
+        width: 80px; /* Ajusta o tamanho das fotos na galeria */
+        height: 80px;
+    }
 }
