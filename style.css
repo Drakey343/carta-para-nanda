@@ -15,10 +15,12 @@ body {
 
 .carta-container {
     perspective: 1000px;
+    padding: 20px; /* Espaço para evitar que a carta fique muito próxima das bordas da tela */
 }
 
 .carta {
-    width: 400px;
+    width: 100%; /* Largura responsiva */
+    max-width: 400px; /* Largura máxima para a carta */
     height: 500px;
     position: relative;
     transform-style: preserve-3d;
@@ -47,11 +49,11 @@ body {
 }
 
 .frente h1 {
-    font-size: 2.5rem;
+    font-size: 2rem; /* Reduzido para melhor responsividade */
 }
 
 .frente p {
-    font-size: 1rem;
+    font-size: 0.9rem; /* Reduzido para melhor responsividade */
     margin-top: 10px;
 }
 
@@ -63,12 +65,12 @@ body {
 }
 
 .mensagem h2 {
-    font-size: 2rem;
+    font-size: 1.8rem; /* Reduzido para melhor responsividade */
     color: #ff6b6b;
 }
 
 .texto {
-    font-size: 1.1rem;
+    font-size: 1rem; /* Reduzido para melhor responsividade */
     line-height: 1.6;
     margin-top: 15px;
 }
@@ -76,12 +78,14 @@ body {
 .galeria {
     margin-top: 20px;
     display: flex;
-    gap: 15px;
+    justify-content: center; /* Centraliza as imagens */
+    gap: 10px; /* Espaçamento reduzido entre as imagens */
+    flex-wrap: wrap; /* Permite que as imagens se ajustem em várias linhas */
 }
 
 .foto {
-    width: 100px;
-    height: 100px;
+    width: 80px; /* Largura reduzida para melhor responsividade */
+    height: 80px; /* Altura reduzida para melhor responsividade */
     object-fit: cover;
     border-radius: 8px;
     border: 2px solid #ff6b6b;
@@ -89,7 +93,7 @@ body {
 
 .assinatura {
     margin-top: 20px;
-    font-size: 1.1rem;
+    font-size: 1rem; /* Reduzido para melhor responsividade */
     color: #ff6b6b;
 }
 
